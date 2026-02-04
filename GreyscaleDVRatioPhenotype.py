@@ -38,7 +38,7 @@ def createDarkOverlay(arr, dark_mask):
         overlay[dark_mask] = [255, 0, 0, 255] 
     return overlay
 
-def calcImage(imagePath, rangeWidth=0, SCALERadj=-17):
+def calcImage(imagePath, rangeWidth=0, SCALERadj=-22):
     img = Image.open(imagePath)
     arr = np.array(img)
     height, width = arr.shape[:2]
